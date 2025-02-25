@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const apiUrl = "http://localhost:5004/api/students"; // Update with your API URL
+    const apiUrl = "https://tacticwebapp.onrender.com"; // Update with your API URL
     const studentTableBody = document.getElementById("studentTableBody");
     const addStudentForm = document.getElementById("addStudentForm");
 
