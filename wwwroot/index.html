@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="#" onclick="loadContent('home')">Home</a></li>
+            <li><a href="#" onclick="loadContent('students')">Students</a></li>
+            <li><a href="teachers.html" onclick="loadContent('teachers')">Teachers</a></li> <!-- Added -->
+            <li><a href="#" onclick="loadContent('settings')">Settings</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Welcome to the Dashboard</h1>
+        <p>Select an option from the sidebar to proceed.</p>
+
+        <!-- Add Student Form -->
+        <h2>Add a Student</h2>
+        <form id="addStudentForm">
+            <input type="text" id="studentName" placeholder="Enter student name" required>
+            <button type="submit">Add Student</button>
+        </form>
+
+        <!-- Student Table -->
+        <h2>Students List</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+                <!-- Student data will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

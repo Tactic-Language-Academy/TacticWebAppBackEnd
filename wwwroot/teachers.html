@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers - Assign Scores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="students.html">Students</a></li>
+            <li><a href="teachers.html">Teachers</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Assign Scores to Students</h1>
+
+        <!-- Scores Table -->
+        <form id="scoreForm">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student Name</th>
+                        <th>Score</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="scoresTableBody">
+                    <!-- Student scores will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+    <script src="teachers.js"></script>
+
+</body>
+</html>
